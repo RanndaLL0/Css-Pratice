@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    width: 40%;
+}
+
+.image-container{
+    background: url("images/image-product-desktop.jpg") no-repeat;
+    background-size: cover;
+    width: 50%;
+    min-height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.info-container {
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 10px 10px 0;
+    padding: 30px 20px;
+}
+
+.classification{
+    font: 500 0.8rem "Montserrat";
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    line-height: 1px;
+}
+
+.main-title {
+    margin-top: 15px;
+    font: 700 2rem "Fraunces";
+    line-height: 2rem;
+}
+
+.description {
+    width: calc(100% - 25px);
+    max-width: 400px;
+    margin-top: 25px;
+    color: hsl(228, 12%, 48%);
+    font: 500 0.80rem "Montserrat";
+    line-height: 1.25rem;
+}
+
+.prices {
+    margin-top: 20px;
+    font-family: "Fraunces";
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.new-price {
+    color: hsl(158, 36%, 37%);
+    font: 700 1.7rem "Fraunces";
+}
+
+.old-price {
+    color: hsl(228, 12%, 48%);;
+    text-decoration: line-through;
+    font: 400 0.8rem "Montserrat";
+}
+
+.buy {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    font: 700 0.75rem "Montserrat";
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 0px;
+}
+
+
+@media (max-width: 500px) {
+        main {
+            width: 90%;
+            flex-direction: column;
+        }
+        .image-container{
+            height: 250px;
+            width: 100%;
+            background-position: center;
+            border-radius: 10px 10px 0 0;
+        }
+        .info-container {
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+        }
+}
