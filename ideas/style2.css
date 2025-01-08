@@ -27,19 +27,19 @@ header {
 }
 
 .title-firstLine {
-    font: 200 1.6rem "Poppins";
+    font: 200 2.5rem "Poppins";
 }
 
 .title-secondLine {
     color: hsl(234, 12%, 34%);
-    font: 600 1.6rem "Poppins";
+    font: 600 2.5rem "Poppins";
 }
 
 .description {
     text-align: center;
     color: hsl(234, 12%, 34%);
     margin-top: 10px;
-    font: 300 1rem "Poppins";
+    font: 300 1.1rem "Poppins";
 }
 
 section {
@@ -53,10 +53,9 @@ section {
 }
 
 .container {
-    max-width: 340px;
     border-top: 3px solid;
     border-radius: 3px;
-    padding: 20px;
+    padding: 25px;
     font: 400 0.9rem "Poppins";
     display: flex;
     flex-direction: column;
@@ -73,13 +72,14 @@ section {
 }
 
 .text > h3 {
-    font: 600 1rem "Poppins";
+    font: 600 1.1rem "Poppins";
     color: hsl(235, 11%, 23%);
+    margin-bottom: 8px;
 }
 
 .text > span {
     color: hsl(234, 12%, 34%);
-    font: 500 0.75rem "Poppins";
+    font: 500 0.80rem "Poppins";
 }
 
 .item-1 {
@@ -110,6 +110,10 @@ section {
 
     header{
         max-width: 400px;
+    }
+
+    .title > h3{
+        font-size: 1.5rem;
     }
 
     .description{
